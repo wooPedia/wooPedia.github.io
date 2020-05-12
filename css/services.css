@@ -888,23 +888,35 @@ padding-top: 2px;}
     .progress-bar.color-6 span {
       color: #4054b2; }
 .progress-bar.color-7 {
-    background: #ec5453; }
+    background: dar; }
     .progress-bar.color-7:after {
-      background: #ec5453; }
+      background: slateblue; }
     .progress-bar.color-7 span {
-      color: #ec5453; }
+      color: slateblue; }
   .progress-bar.color-8 {
-    background: #f9bf3f; }
+    background: coral; }
     .progress-bar.color-8:after {
-      background: #f9bf3f; }
+      background: coral; }
     .progress-bar.color-8 span {
-      color: #f9bf3f; }
+      color: coral; }
   .progress-bar.color-9 {
     background: #a84cb8; }
     .progress-bar.color-9:after {
       background: #a84cb8; }
     .progress-bar.color-9 span {
       color: #a84cb8; }
+  .progress-bar.color-10 {
+    background:gray; }
+    .progress-bar.color-10:after {
+      background: gray; }
+    .progress-bar.color-10 span {
+      color: gray; }
+      .progress-bar.color-11 {
+        background:hotpink; }
+        .progress-bar.color-11:after {
+          background: hotpink; }
+        .progress-bar.color-11 span {
+          color: hotpink; }
 .progress-wrap h3{
 	padding-bottom: 14px;
 }
