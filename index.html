@@ -174,77 +174,150 @@
 
         window.jssor_3_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-            {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
+var jssor_1_SlideshowTransitions = [
+{$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+];
 
-            var jssor_1_options = {
-            $AutoPlay: 0,
-            $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-            },
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            },
-            $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $SpacingX: 5,
-                $SpacingY: 5
-            }
-            };
+var jssor_1_options = {
+$AutoPlay: 0,
+$SlideshowOptions: {
+    $Class: $JssorSlideshowRunner$,
+    $Transitions: jssor_1_SlideshowTransitions,
+    $TransitionsOrder: 1
+},
+$ArrowNavigatorOptions: {
+    $Class: $JssorArrowNavigator$
+},
+$ThumbnailNavigatorOptions: {
+    $Class: $JssorThumbnailNavigator$,
+    $SpacingX: 5,
+    $SpacingY: 5
+}
+};
 
-            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_1_options);
+var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_1_options);
 
-            /*#region responsive code begin*/
+/*#region responsive code begin*/
 
-            var MAX_WIDTH = 980;
+var MAX_WIDTH = 980;
 
-            function ScaleSlider() {
-                var containerElement = jssor_3_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
+function ScaleSlider() {
+    var containerElement = jssor_3_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
 
-                if (containerWidth) {
+    if (containerWidth) {
 
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-                    jssor_3_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
+        jssor_3_slider.$ScaleWidth(expectedWidth);
+    }
+    else {
+        window.setTimeout(ScaleSlider, 30);
+    }
+}
 
-            ScaleSlider();
+ScaleSlider();
 
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-            };
-            
+$Jssor$.$AddEvent(window, "load", ScaleSlider);
+$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+/*#endregion responsive code end*/
+};
+
+        window.jssor_4_slider_init = function() {
+
+var jssor_1_SlideshowTransitions = [
+{$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+{$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+];
+
+var jssor_1_options = {
+$AutoPlay: 0,
+$SlideshowOptions: {
+    $Class: $JssorSlideshowRunner$,
+    $Transitions: jssor_1_SlideshowTransitions,
+    $TransitionsOrder: 1
+},
+$ArrowNavigatorOptions: {
+    $Class: $JssorArrowNavigator$
+},
+$ThumbnailNavigatorOptions: {
+    $Class: $JssorThumbnailNavigator$,
+    $SpacingX: 5,
+    $SpacingY: 5
+}
+};
+
+var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_1_options);
+
+/*#region responsive code begin*/
+
+var MAX_WIDTH = 980;
+
+function ScaleSlider() {
+    var containerElement = jssor_4_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
+
+    if (containerWidth) {
+
+        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+        jssor_4_slider.$ScaleWidth(expectedWidth);
+    }
+    else {
+        window.setTimeout(ScaleSlider, 30);
+    }
+}
+
+ScaleSlider();
+
+$Jssor$.$AddEvent(window, "load", ScaleSlider);
+$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+/*#endregion responsive code end*/
+};
+
     </script>
         
     </head>
@@ -454,6 +527,95 @@
                 <div class="container">
                     <p id="instruction" class="myFont animate-box" data-animate-effect="fadeInLeft"><strong>각 프로젝트를 클릭해보세요!</strong></p>
                     <div class="row">
+
+                            <!-- project4 -->
+                            <div id="project4" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
+                                <div class="services color-1 project-for-hover">
+                                    <span class="icon2"><a href="https://github.com/wooPedia/POCU" target="_blank"><i class="fab fa-spin fa-github fa-2x" style="color:black"></i></a></span>
+                                    <h3>Multiplayer Gomoku Game (미완성)</h3>
+                                    <p>2020.09 - 개발 중</p>
+                                    <div class="myFont">WinAPI 및 C++을 이용하여 개발 중인 멀티 플레이어 오목 게임입니다.</div>
+                                    <img title="C++" class="svg-icon" src="img/cpp.svg"/> <img title="Visual Studio 2019" class="svg-icon" src="img/vs2019.svg"/> 
+                                </div>
+                            </div>
+                            <div id="project4-detail" style="display:none;margin-top:-50px;">
+                                <div id="jssor_4" style="position:relative;margin:0 auto;top:0px;left:0px;width:880px;height:550px;overflow:hidden;visibility:hidden;">
+                                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:880px;height:550px;overflow:hidden;">
+                                        <script type="text/javascript">
+                                            var subText = [
+                                                "대략적인 게임의 프로세스",
+                                                "스레드의 흐름",
+                                                "소켓용 스레드 생성",
+                                                "논블로킹 소켓을 통한 connect 및 select를 이용한 입출력 다중화",
+                                                "객체 직렬화를 통한 패킷 전송(1)",
+                                                "객체 직렬화를 통한 패킷 전송(2)",
+                                                '역직렬화를 통한 패킷 수신(1)',
+                                                '역직렬화를 통한 패킷 수신(2)',
+                                                '직렬화를 응용한 SignalManager 클래스 설계',
+                                                'SignalManager를 이용한 상대 호스트로의 신호 전송',
+                                                'SignalManager를 이용한 상대 호스트로부터의 신호 수신',
+                                                '다양한 상수에 enum 타입을 활용(1)',
+                                                '다양한 상수에 enum 타입을 활용(2)',
+                                                '작업 큐를 활용한 생산자/소비자 패턴',
+                                                '클릭한 좌표를 조사하여 유효한 좌표일 경우 오목알을 그림',
+                                                '유효한 좌표인지 확인 후 그와 가까운 격자점의 좌표 반환',
+                                                '오목알을 놓을 때마다 승리 조건을 확인',
+                                                '게임 메뉴 화면',
+                                                '게임 진행 중 화면',
+                                                '<a target="_blank" href="https://woo-dev.tistory.com/43">disassemble을 통한 포인터와 레퍼런스의 호출 차이 살펴보기</a>',
+                                                '<a target="_blank" href="https://woo-dev.tistory.com/50">가상함수와 비가상함수의 호출 차이 살펴보기</a>'
+                                            ];
+                                            var numCarousel = 19; 
+                                            for (let i = 0; i < numCarousel; ++i)
+                                                document.write(
+                                                    '<div>'
+                                                    + '<img style="padding:80px 120px 80px 120px" data-u="image" src="img/project4_img' + i + '.jpg"/>'
+                                                    + '<div class="absolute-center">'
+                                                    +    subText[i]
+                                                    + '</div>'
+                                                    + '</div>'
+                                                );
+                                        </script>
+                                    </div>
+                                    <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
+                                    <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:240px;left:30px;" data-scale="0.75">
+                                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                            <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                                            <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                                        </svg>
+                                    </div>
+                                    <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:240px;right:30px;" data-scale="0.75">
+                                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                            <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                                            <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="desc-border">
+                                    <br>
+                                    <b>첫 번째,</b><br>
+                                    아직 개발 중인 프로젝트이며, Windows 프로그램의 동작 방식 및 Win32 API 학습하기 위해 시작한 프로젝트입니다. 
+                                    또한 Winsock을 통한 서버와 클라이언트의 통신 및 멀티 스레딩에 대한 이해에도 많은 도움이 되었습니다. 
+                                    간단한 게임일 것이라 생각했지만, 생각보다 다양한 지식들을 필요로 했습니다. 유동적인 루틴과 끊기지 않는 게임 흐름을 위해
+                                    비동기 소켓 및 멀티 스레딩에 대해 학습하기도 하였습니다. 또한 TCP 통신에서 단순한 문자열 전송이 아닌 복잡한 데이터 타입을 전송할 때 어떠한 효율적으로 
+                                    방식으로 데이터를 전달하고 수신하는지에 대해서도 학습하였습니다. 해당 게임에선 비록 복잡한 데이터 타입을 전달하진 않지만, 
+                                    직접 활용해 보고 싶어 객체 직렬화 및 역직렬화를 적용하였습니다. 단순히 클라이언트 프로그래머를 희망한다고 해서 네트워크에 대한 지식이 필요없진 않다는 것을
+                                    느끼게 된 계기였습니다. 
+
+                                  </b> <br><br>
+
+                                    <b>두 번째,</b><br>
+                                    주로 고정적으로 사용되는 상수 데이터에 enum 타입을 활용하여 메모리를 아끼고 유지보수성을 높였습니다.
+                                    대부분의 루틴은 모두 구현된 상태이며, 현재 상대방과의 Ready 상태에 대한 동기화를 구현하고 있습니다.  
+                                    당장은 OOP 설계의 목적보다는 API를 경험하는 데 중점을 두고 있어, 절차 지향적인 형태로 개발하고 있습니다.
+                                    프로그램이 어느정도 완성되면 OOP 형태로 변경할 계획입니다.
+                                    <br><br>
+                                   
+                                </div>
+                            </div>
+                            <!-- project4 end -->
 
                             <!-- project1 -->
                             <div id="project1" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
@@ -805,6 +967,7 @@
                 jssor_1_slider_init();
                 jssor_2_slider_init();
                 jssor_3_slider_init();
+                jssor_4_slider_init();
                 
                 $("#project1").mouseover(function(){
                     give_instruction();
@@ -813,6 +976,9 @@
                     give_instruction();
                 });
                 $("#project3").mouseover(function(){
+                    give_instruction();
+                });
+                $("#project4").mouseover(function(){
                     give_instruction();
                 });
 
@@ -824,6 +990,9 @@
                 });
                 $("#project3").click(function() {
                     $("#project3-detail").slideToggle(500);
+                });
+                $("#project4").click(function() {
+                    $("#project4-detail").slideToggle(500);
                 });
             });
         </script>
