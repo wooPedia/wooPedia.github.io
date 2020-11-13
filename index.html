@@ -531,10 +531,13 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                             <!-- project4 -->
                             <div id="project4" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
                                 <div class="services color-1 project-for-hover">
-                                    <span class="icon2"><a href="https://github.com/wooPedia/GomokuGame" target="_blank"><i class="fab fa-spin fa-github fa-2x" style="color:black"></i></a></span>
-                                    <h3>Multiplayer Gomoku Game (미완성)</h3>
-                                    <p>2020.09 - 개발 중</p>
-                                    <div class="myFont">WinAPI 및 C++을 이용하여 개발 중인 멀티 플레이어 오목 게임입니다.</div>
+                                    <span class="icon2">
+                                        <a href="https://github.com/wooPedia/GomokuGame" target="_blank"><i class="fab fa-spin fa-github fa-2x" style="color:black"></i></a>
+                                        <a href="https://youtu.be/kiDBayVYzVc" target="_blank"><i class="fab fa-spin fa-youtube fa-2x" style="color:red"></i></a>
+                                    </span>
+                                    <h3>Gomoku Game</h3>
+                                    <p>2020.09 - 2020.11</p>
+                                    <div class="myFont">WinAPI 및 C++을 이용하여 개발 한 오목 게임입니다. </div>
                                     <img title="C++" class="svg-icon" src="img/cpp.svg"/> <img title="Visual Studio 2019" class="svg-icon" src="img/vs2019.svg"/> 
                                 </div>
                             </div>
@@ -560,12 +563,8 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                                                 '클릭한 좌표를 조사하여 유효한 좌표일 경우 오목알을 그림',
                                                 '유효한 좌표인지 확인 후 그와 가까운 격자점의 좌표 반환',
                                                 '오목알을 놓을 때마다 승리 조건을 확인',
-                                                '게임 메뉴 화면',
-                                                '게임 진행 중 화면',
-                                                '<a target="_blank" href="https://woo-dev.tistory.com/43">disassemble을 통한 포인터와 레퍼런스의 호출 차이 살펴보기</a>',
-                                                '<a target="_blank" href="https://woo-dev.tistory.com/50">가상함수와 비가상함수의 호출 차이 살펴보기</a>'
                                             ];
-                                            var numCarousel = 19; 
+                                            var numCarousel = 17; 
                                             for (let i = 0; i < numCarousel; ++i)
                                                 document.write(
                                                     '<div>'
@@ -595,24 +594,16 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                                 </div>
                                 <div class="desc-border">
                                     <br>
-                                    <b>첫 번째,</b><br>
-                                    아직 개발 중인 프로젝트이며, Windows 프로그램의 동작 방식 및 Win32 API 학습하기 위해 시작한 프로젝트입니다. 
-                                    또한 Winsock을 통한 서버와 클라이언트의 통신 및 멀티 스레딩에 대한 이해에도 많은 도움이 되었습니다. 
+                                    Windows 프로그램의 동작 방식 및 Win32 API의 학습을 위해 시작한 프로젝트이며, 
+                                    결과적으로 서버와 클라이언트의 통신 및 멀티 스레딩에 대한 이해에도 많은 도움이 되었습니다.  
+                                    깔끔한 코드 또는 OOP적인 설계에 초점을 맞추기 보단, 다른 기술들을 익히는 데 집중했습니다. 
                                     간단한 게임일 것이라 생각했지만, 생각보다 다양한 지식들을 필요로 했습니다. 유동적인 루틴과 끊기지 않는 게임 흐름을 위해
                                     비동기 소켓 및 멀티 스레딩에 대해 학습하기도 하였습니다. 또한 TCP 통신에서 단순한 문자열 전송이 아닌 복잡한 데이터 타입을 전송할 때 어떠한 효율적으로 
                                     방식으로 데이터를 전달하고 수신하는지에 대해서도 학습하였습니다. 해당 게임에선 비록 복잡한 데이터 타입을 전달하진 않지만, 
                                     직접 활용해 보고 싶어 객체 직렬화 및 역직렬화를 적용하였습니다. 단순히 클라이언트 프로그래머를 희망한다고 해서 네트워크에 대한 지식이 필요없진 않다는 것을
                                     느끼게 된 계기였습니다. 
-
                                   </b> <br><br>
-
-                                    <b>두 번째,</b><br>
-                                    주로 고정적으로 사용되는 상수 데이터에 enum 타입을 활용하여 메모리를 아끼고 유지보수성을 높였습니다.
-                                    대부분의 루틴은 모두 구현된 상태이며, 현재 상대방과의 Ready 상태에 대한 동기화를 구현하고 있습니다.  
-                                    당장은 OOP 설계의 목적보다는 API를 경험하는 데 중점을 두고 있어, 절차 지향적인 형태로 개발하고 있습니다.
-                                    프로그램이 어느정도 완성되면 OOP 형태로 변경할 계획입니다.
                                     <br><br>
-                                   
                                 </div>
                             </div>
                             <!-- project4 end -->
