@@ -24,53 +24,55 @@
         <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Composer -->
     <!-- Source: https://www.jssor.com/demos/image-gallery.slider/=edit -->
+
     <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+
+        var jssor_SlideshowTransitions = [
+            {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+        ];
+
+        var jssor_options = {
+            $AutoPlay: 0,
+            $SlideshowOptions: {
+            $Class: $JssorSlideshowRunner$,
+            $Transitions: jssor_SlideshowTransitions,
+            $TransitionsOrder: 1
+            },
+            $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+            },
+            $ThumbnailNavigatorOptions: {
+            $Class: $JssorThumbnailNavigator$,
+            $SpacingX: 5,
+            $SpacingY: 5
+            }
+        };
+
         window.jssor_1_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
-
-            var jssor_1_options = {
-              $AutoPlay: 0,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $SpacingX: 5,
-                $SpacingY: 5
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_options);
 
             /*#region responsive code begin*/
 
@@ -101,49 +103,7 @@
 
         window.jssor_2_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-            {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-            {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
-
-            var jssor_1_options = {
-            $AutoPlay: 0,
-            $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-            },
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            },
-            $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $SpacingX: 5,
-                $SpacingY: 5
-            }
-            };
-
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_options);
 
             /*#region responsive code begin*/
 
@@ -174,149 +134,96 @@
 
         window.jssor_3_slider_init = function() {
 
-var jssor_1_SlideshowTransitions = [
-{$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-];
+            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_options);
 
-var jssor_1_options = {
-$AutoPlay: 0,
-$SlideshowOptions: {
-    $Class: $JssorSlideshowRunner$,
-    $Transitions: jssor_1_SlideshowTransitions,
-    $TransitionsOrder: 1
-},
-$ArrowNavigatorOptions: {
-    $Class: $JssorArrowNavigator$
-},
-$ThumbnailNavigatorOptions: {
-    $Class: $JssorThumbnailNavigator$,
-    $SpacingX: 5,
-    $SpacingY: 5
-}
-};
+            /*#region responsive code begin*/
 
-var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_1_options);
+            var MAX_WIDTH = 980;
 
-/*#region responsive code begin*/
+            function ScaleSlider() {
+                var containerElement = jssor_3_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
 
-var MAX_WIDTH = 980;
+                if (containerWidth) {
 
-function ScaleSlider() {
-    var containerElement = jssor_3_slider.$Elmt.parentNode;
-    var containerWidth = containerElement.clientWidth;
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-    if (containerWidth) {
+                    jssor_3_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
 
-        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+            ScaleSlider();
 
-        jssor_3_slider.$ScaleWidth(expectedWidth);
-    }
-    else {
-        window.setTimeout(ScaleSlider, 30);
-    }
-}
-
-ScaleSlider();
-
-$Jssor$.$AddEvent(window, "load", ScaleSlider);
-$Jssor$.$AddEvent(window, "resize", ScaleSlider);
-$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-/*#endregion responsive code end*/
-};
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+            };
 
         window.jssor_4_slider_init = function() {
 
-var jssor_1_SlideshowTransitions = [
-{$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-{$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-];
+            var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_options);
 
-var jssor_1_options = {
-$AutoPlay: 0,
-$SlideshowOptions: {
-    $Class: $JssorSlideshowRunner$,
-    $Transitions: jssor_1_SlideshowTransitions,
-    $TransitionsOrder: 1
-},
-$ArrowNavigatorOptions: {
-    $Class: $JssorArrowNavigator$
-},
-$ThumbnailNavigatorOptions: {
-    $Class: $JssorThumbnailNavigator$,
-    $SpacingX: 5,
-    $SpacingY: 5
-}
-};
+            /*#region responsive code begin*/
 
-var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_1_options);
+            var MAX_WIDTH = 980;
 
-/*#region responsive code begin*/
+            function ScaleSlider() {
+                var containerElement = jssor_4_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
 
-var MAX_WIDTH = 980;
+                if (containerWidth) {
 
-function ScaleSlider() {
-    var containerElement = jssor_4_slider.$Elmt.parentNode;
-    var containerWidth = containerElement.clientWidth;
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-    if (containerWidth) {
+                    jssor_4_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
 
-        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+            ScaleSlider();
 
-        jssor_4_slider.$ScaleWidth(expectedWidth);
-    }
-    else {
-        window.setTimeout(ScaleSlider, 30);
-    }
-}
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+            };
 
-ScaleSlider();
+        window.jssor_5_slider_init = function() {
 
-$Jssor$.$AddEvent(window, "load", ScaleSlider);
-$Jssor$.$AddEvent(window, "resize", ScaleSlider);
-$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-/*#endregion responsive code end*/
-};
+            var jssor_5_slider = new $JssorSlider$("jssor_5", jssor_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_5_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
 
     </script>
         
@@ -351,35 +258,6 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                 </div>
             </div>
         </div>
-
-        <!-- <section class="colorlib-about" data-section="about">
-            <div class="container">
-                <div class="row">
-                    <script type="text/javascript">
-                        var domains = ["Web Development", "Course Solutions", "Code Snippets", "Machine Learning"];
-                        var icons = ["desktop", "key", "code", "university"];
-                        var urls = ["web_projects/index.html", "web_projects/index2.html", "web_projects/index3.html",
-                            "web_projects/index4.html"
-                        ];
-                        var ids = [3, 4, 2, 1];
-                        for (let i = 0; i < domains.length; i++) {
-                            var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                            document.write(
-                                '<div class="col-sm-3 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                              <a href="' + urls[i] + '" >\
-                                <div class="services color-' + ids[i] + '">\
-                                  <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                                  <h3>' + domains[i] + '</h3>\
-                                </div>\
-                              </a>\
-                            </div>'
-                            );
-                        }
-
-                    </script>
-                </div>
-            </div>
-        </section> -->
 
         <br>
         <br>
@@ -527,6 +405,101 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                 <div class="container">
                     <p id="instruction" class="myFont animate-box" data-animate-effect="fadeInLeft"><strong>각 프로젝트를 클릭해보세요!</strong></p>
                     <div class="row">
+
+                            <!-- project5 -->
+                            <div id="project5" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
+                                <div class="services color-1 project-for-hover">
+                                    <span class="icon2">
+                                        <a href="https://github.com/wooPedia/DDrawSimpleGame" target="_blank"><i class="fab fa-spin fa-github fa-2x" style="color:black"></i></a>
+                                        <a href="https://youtu.be/BsGZLnvOM3A" target="_blank"><i class="fab fa-spin fa-youtube fa-2x" style="color:red"></i></a>
+                                    </span>
+                                    <h3>Simple 2D flying game</h3>
+                                    <p>2020.12 - 2021.02</p>
+                                    <div class="myFont">Direct Draw를 이용하여 개발한 간단한 2D 슈팅 게임입니다. </div>
+                                    <img title="C++" class="svg-icon" src="img/cpp.svg"/>
+                                    <img title="Visual Studio 2019" class="svg-icon" src="img/vs2019.svg"/>  
+                                    <img title="DirectDraw" src="img/directx.png"/>
+                                    <img title="Lua" style="width:40px;margin-right:10px;" src="img/lua.png"/>
+                                </div>
+                            </div>
+                            <div id="project5-detail" style="display:none;margin-top:-50px;">
+                                <div id="jssor_5" style="position:relative;margin:0 auto;top:0px;left:0px;width:880px;height:750px;overflow:hidden;visibility:hidden;">
+                                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:880px;height:750px;overflow:hidden;">
+                                        <script type="text/javascript">
+                                            var subText = [
+                                                "게임 루프 및 프로세스",
+                                                "컴포넌트 기반 오브젝트 설계",
+                                                "베이스 게임 오브젝트 클래스",
+                                                "(컴포넌트 클래시 예시) 해당 컴포넌트는 충돌 관련 컴포넌트이다. 해당 컴포넌트를 필요로 하는 오브젝트는 충돌 처리 핸들러를 구현해야 한다. ",
+                                                "필요한 컴포넌트만 메모리 할당하여 사용",
+                                                "처리할 윈도 메시지가 없을 때 실행되는 게임 프로세스",
+                                                '매 프레임마다 변화되는 데이터 계산',
+                                                '플레이어와 적 총알 간에 충돌 검사. <br> 충돌 시 NotifyHit 함수를 호출하면 충돌 처리 핸들러가 호출됨',
+                                                '오브젝트 매니저로 동일한 종류의 오브젝트들을 관리. <br> 매니저는 오브젝트 풀을 관리하며, 여기서 객체를 Get/Return 한다.',
+                                                'OnFrameMove() 종료 후 변화된 데이터를 기반으로 오브젝트를 Drawing',
+                                                '사전에 생성한 압축 이미지 데이터를 가지고, DirectDraw를 통해 얻은 화면 버퍼 주소에 픽셀을 찍음으로써 이미지를 Drawing',
+                                                '쉽게 변경될 수 있는 값은 스크립트를 활용',
+                                                'Lua를 쉽게 다룰 수 있도록 해주는 간단한 Wrapper 클래스'
+                                            ];
+                                            var numCarousel = 13; 
+                                            for (let i = 0; i < numCarousel; ++i)
+                                                document.write(
+                                                    '<div>'
+                                                    + '<img style="padding:80px 120px 80px 120px" data-u="image" src="img/project5_img' + i + '.jpg"/>'
+                                                    + '<div class="absolute-center" style="padding-top:210px;">'
+                                                    +    subText[i]
+                                                    + '</div>'
+                                                    + '</div>'
+                                                );
+                                        </script>
+                                    </div>
+                                    <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
+                                    <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:240px;left:30px;" data-scale="0.75">
+                                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                            <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                                            <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                                        </svg>
+                                    </div>
+                                    <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:240px;right:30px;" data-scale="0.75">
+                                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                            <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                                            <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="desc-border">
+                                    <br><br><br>
+                                    3D 게임을 만들기 전 게임 개발에 대한 전반적인 이해를 위해 시작한 2D 게임 프로젝트입니다. 
+                                    갤러그와 비슷하지만 매우 단순하며, 게임의 재미보단 <b>게임의 패턴을 경험해 보는 데 중점</b>을 두었습니다.  
+                                    그래픽 라이브러리는 <b>DirectDraw</b>를 사용하였으며, 스크린에 대한 메모리 주소를 얻어 래스터 이미지의 픽셀을 직접 화면에 write하였습니다.
+                                    이미지는 TGA 포맷을 이용하였으며, 컬러키 처리 등을 적용하여 압축된 이미지 데이터를 이용하였습니다. 
+                                    3D 게임에서도 텍스쳐를 다루게 될텐데, 이를 생각해서라도 비트맵 이미지를 다뤄볼 수 있는 좋은 경험이었다고 생각합니다.
+
+                                    <br><br>
+                                    
+                                    게임 오브젝트는 <b>컴포넌트 기반</b>으로 설계하였습니다. 처음엔 단순히 체력, 공격력과 같은 클래스들 중 필요한 것들만 
+                                    다중 상속하거나 인터페이스로 만들었으나, 클래스 구조의 복잡성 및 중복되는 데이터 및 메소드 선언을 이유로 다른 설계 방법을 찾아보게 되었습니다.
+                                    개발 커뮤니티에서 운이 좋게 컴포넌트 기반 게임 오브젝트라는 키워드를 얻게 되었고, 검색을 통해 다양한 자료들을 얻게 되었습니다.
+                                    해당 프로젝트는 매우 단순하기에, 컴포넌트를 적용하는 것은 배보다 배꼽이 더 크지 않을까? 라고도 생각했지만, 지금 경험해보면 나중에 도움이 될 것 같아 적용하게 되었습니다.
+                                    컴포넌트 패턴 중에서도 우선적으로 필요하다고 생각하는 요소들만 적용했기 때문에 불완전하고 어색하다고 생각되는 아쉬운 부분들도 있습니다.
+
+                                    <br><br>
+
+                                    자주 생성되고 지워지는 오브젝트들은 <b>메모리 단편화 방지 및 효율적인 사용을 위해 오브젝트 풀을 사용</b>하도록 하였습니다.
+                                    그리고 오브젝트 매니저라는 클래스를 만들어서 오브젝트 생성과 삭제 및 접근 등을 보다 쉽게 하였습니다. 
+                                    또한 각 오브젝트의 체력, 공격력과 같이 <b>쉽게 변경될 수 있는 값은 Lua 스크립트를 활용</b>하여 <b>Rebuild</b>없이 최신의 값을 유지하도록 하였습니다.
+                                    
+                                    <br><br>
+
+                                    비록 매우 심플한 게임이지만, 내부적으로 비트맵 다루기, 게임 패턴, 오브젝트 설계 등 다양한 경험을 통해 기본을 쌓을 수 있어 매우 좋은 경험이었다고 생각합니다.   
+
+                                  </b> <br><br>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <!-- project5 end -->
 
                             <!-- project4 -->
                             <div id="project4" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
@@ -959,6 +932,7 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                 jssor_2_slider_init();
                 jssor_3_slider_init();
                 jssor_4_slider_init();
+                jssor_5_slider_init();
                 
                 $("#project1").mouseover(function(){
                     give_instruction();
@@ -970,6 +944,9 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                     give_instruction();
                 });
                 $("#project4").mouseover(function(){
+                    give_instruction();
+                });
+                $("#project5").mouseover(function(){
                     give_instruction();
                 });
 
@@ -984,6 +961,9 @@ $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
                 });
                 $("#project4").click(function() {
                     $("#project4-detail").slideToggle(500);
+                });
+                $("#project5").click(function() {
+                    $("#project5-detail").slideToggle(500);
                 });
             });
         </script>
