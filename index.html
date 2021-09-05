@@ -444,7 +444,7 @@
                             <div id="project6" class="col-md-12 animate-box" data-animate-effect="fadeInRight">
                                 <div class="services color-1 project-for-hover">
                                     <span class="icon2">
-                                        <a href="https://youtu.be/kI4p48w31Vs" target="_blank"><i class="fab fa-spin fa-youtube fa-2x" style="color:red"></i></a>
+                                        <a href="https://youtu.be/OdzjlQvw1N0" target="_blank"><i class="fab fa-spin fa-youtube fa-2x" style="color:red"></i></a>
                                     </span>
                                     <h3>Simple 3D Graphics Engine</h3>
                                     <p>2021.3 - 개발중</p>
@@ -460,12 +460,15 @@
                                     <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:880px;height:750px;overflow:hidden;">
                                         <script type="text/javascript">
                                             var subText = [
-                                                '<a target="_blank" href="https://woo-dev.tistory.com/248?category=941467">카메라 클래스 설계 및 구현 포스팅</a>',
-                                                "Constant buffer를 용도 별로 나누어, 필요없는 데이터가 업데이트되지 않도록 ",
-                                                "Vertex Shader: diffuse & specular 계산",
-                                                "Pixel Shader: 모든 조명을 더하여 하나의 픽셀 값을 생성"
+                                                // '<a target="_blank" href="https://woo-dev.tistory.com/248?category=941467">카메라 클래스 설계 및 구현 포스팅</a>',
+                                                '카메라의 이동 및 회전 - Transform 클래스 이용(1)',
+                                                "카메라의 이동 및 회전 - Transform 클래스 이용(2)",
+                                                "각 오브젝트는 Transform 클래스로부터 월드 행렬을 얻어서 사용",
+                                                "각 오브젝트에 대해 Input-UpdateFrame-Render 순으로 수행",
+                                                "상수 버퍼 사용 및 업데이트",
+                                                "SpotLight 계산 셰이더 코드의 일부"
                                             ];
-                                            var numCarousel = 4; 
+                                            var numCarousel = 6; 
                                             for (let i = 0; i < numCarousel; ++i)
                                                 document.write(
                                                     '<div>'
@@ -496,9 +499,10 @@
                                 <div class="desc-border">
                                     <br><br><br>
                                     DirectX 11 및 HLSL를 활용하여 개발 중인 3D 그래픽스 엔진입니다. 그래픽 라이브러리 및 셰이더 학습을 위해 시작한 프로젝트이며, 
-                                    기본적인 구조 및 코드는 오픈 소스를 참고하였으며, 구현하고 싶은 기능을 추가해 나가고 있습니다.
-                                    현재 아주 간단한 기능들만 구현되어 있습니다. 오브젝트를 3D 공간에 렌더링할 수 있으며, 가상 카메라를 통해 물체를 관찰할 수 있습니다.
-                                    현재 Diffuse, Specular와 같은 조명 효과를 구현 중에 있습니다. UI는 ImGUI 라이브러리를 활용하고 있습니다. 
+                                    기본적인 구조 및 코드는 유튜브 및 오픈 소스를 참고하였습니다. 아직 게임 엔진이라고는 할 수 없는 규모이지만, 그래픽스 학습과 함께
+                                    구현해보고 싶은 기능들을 추가해 나가고 있습니다. 현재 UI를 통해 오브젝트를 생성하고 배치할 수 있으며, 
+                                    조명 모델은 언리얼 엔진의 조명을 참고하여 Directional Light, Point Light, Spot Light을 구현해보았습니다. UI는 ImGUI 라이브러리를 활용하고 있습니다. 
+                                    계속해서 기능을 추가하며 간단한 게임을 만들 수 있도록 하는 것이 목표입니다.
                                 </b> <br><br>
                                     <br><br>
                                 </div>
